@@ -1,5 +1,4 @@
-# python-JSONEncoder-examples
-date, Numeric etc. convert to json-string
+Convert datetime, Numeric etc. to JSON-string
 
 http://pythonworld.ru/moduli/modul-json.html
 
