@@ -14,3 +14,16 @@ print type(t) # datetime.datetime.now()
 > print json.loads(s)
 [u'2016-01-19T08:30:09.242000']
 ```
+
+Другие простейшие типы:
+```
+print "None :", json.dumps([None]) # [null]
+print "True :", json.dumps([True]) # [true]
+print "False:", json.dumps([False]) # [false]
+print "1.23 :", json.dumps([1.23]) # [1.23]
+# print "1+2j :", json.dumps([1+2j]) # TypeError: (1+2j) is not JSON serializable
+print "100L :", json.dumps([100L]) # [100]
+print "u''  :", json.dumps([u'привет']) # ["\u043f\u0440\u0438\u0432\u0435\u0442"]
+print "{..} :", json.dumps([{"1":"2"}]) # [{"1": "2"}]
+print "(..) :", json.dumps([("1","2")]) # [["1", "2"]]
+```
